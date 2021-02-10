@@ -68,21 +68,24 @@ _Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening th
 
 The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
 **Describe your setting, players, activity and goals here.**
+A reflective device that shows a certain color according to the temperature of it's surrounding. The setting would be both indoor and outdoor environment, ideally with high fluctuation in terms of temperature change, and the player would be anyone who wants to monitor the change in temperature with immediate update -- this would be useful for someone who went on hiking. The activity would be the player would be notified by the changing color on the device, to know the updated status of the surrounding temperature. The goal would be to notify the player as soon as possible if temperature has changed in his or her surrounding environment, this is especially important in the case of a emergency.
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 **Include a picture of your storyboard here**
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 **Summarize feedback you got here.**
-
+People reflected on how feasible the interaction would be for this prototype.
 
 ## Part B. Act out the Interaction
 
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 **Are there things that seemed better on paper than acted out?**
+One immediate difference that I noticed is the possibility of the change in color might not be too obvious.
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
+The light could flash if the temperature suddenly dropped or raised (adjustable by the player).
 
 
 ## Part C. Prototype the device
