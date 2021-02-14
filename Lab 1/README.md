@@ -61,19 +61,22 @@ For this lab, the idea is a outdoor thermometer device that would show a certain
 
 **Include a picture of your storyboard here**
 
-Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
+![](images/storyboard.jpg)
+
+
 **Summarize feedback you got here.**
-People reflected on how feasible the interaction would be for this prototype.
+
+People reflected on how feasible the interaction would be for this prototype. Also, people agreed that it is an interesting idea that could be useful in critical situations.
 
 ## Part B. Act out the Interaction
 
-Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
-
 **Are there things that seemed better on paper than acted out?**
-One immediate difference that I noticed is the possibility of the change in color might not be too obvious.
+
+One immediate difference that I noticed is the possibility of the change in color might not be too obvious. Also, it might be awkward if one needs to consistently look at a floating light. Therefore, it might be important to make sure the message is delivered to the users. 
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
-The light could flash if the temperature suddenly dropped or raised (adjustable by the player).
+
+The light could flash if the temperature suddenly dropped or raised (adjustable by the player) for a certain degree.
 
 
 ## Part C. Prototype the device
@@ -83,36 +86,45 @@ You will be using your smartphone as a stand-in for the device you are prototypi
 Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
 
 We invented this tool for this lab! 
+
 **Give us feedback on Tinkerbelle.**
-I am one of those who had a lot of trouble with this tool. 
+
+I am one of those who had a lot of trouble with this tool. I managed to get it working by using a Windows system instead of a Mac. I was pleasantly surprised to find out that Tinkerbelle mainly focuses on color changing. The instruction is clear and easy to use (once it actually works). 
 
 ## Part D. Wizard the device
+
 Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
 
 **Include your first attempts at recording the set-up video here.**
 
+[link to video](https://drive.google.com/file/d/1ZrhD07779RQylEMvxLWs9bNYHvLv4fcc/view?usp=sharing)
+
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 **Show the follow-up work here.**
-Since the tool has no light flashing ability, a bark sound would be played once the temperature drop below a certain point.
+
+Since the tool has no light flashing ability, a alert sound would be played once the temperature drop below a certain point. 
 
 ## Part E. Costume the device
 
-Only now should you start worrying about what the device should look like. Develop a costume so that you can use your phone as this device.
-
-Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
-
 **Include sketches of what your device might look like here.**
 
+![](images/draft_drawing.png)
+
+
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
-Thermometer would look like -- using the mental image, try to convey the message of it's usage.
+
+Thermometer would look like -- using the familiar mental image of a thermometer, the look of the device attempts to convey its usage. Since it is a floating device, there is no concern with protection. It is important that the light on the device needs to be big enough to attract attention. 
 
 ## Part F. Record
 
 **Take a video of your prototyped interaction.**
 
+[link to video](https://drive.google.com/file/d/14tqaYdl-JqIHhkofs_QQji7V9Xb7i0Xv/view?usp=sharing)
+
 **Please indicate anyone you collaborated with on this Lab.**
-My mom
+
+My mom helped me with some of the filming. I also discussed with Jiadong Lou about the idea. 
 
 # Staging Interaction, Part 2 
 
