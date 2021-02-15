@@ -49,7 +49,7 @@ People reflected on how feasible the interaction would be for this prototype. Al
 
 **Are there things that seemed better on paper than acted out?**
 
-One immediate difference that I noticed is that the change in color of the light might not be obvious. Also, it might be awkward if one needs to consistently look at a light while doing something else. Therefore, it might be important to make sure the message is delivered to the users. 
+One immediate difference that I noticed is that the change in color might not be very obvious. Also, it might be awkward if one needs to consistently look at a light while doing something else. It is very awkward to determine a specific setting where the device would be noticed and used actively. Therefore, it would be important to make sure the message is delivered to the users. 
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
 
@@ -60,7 +60,7 @@ The light could flash if the temperature suddenly dropped or raised by a certain
 
 **Give us feedback on Tinkerbelle.**
 
-I am one of those who had a lot of trouble with this tool. I managed to get it working by using a Windows system instead of a Mac. I was pleasantly surprised to find out that Tinkerbelle mainly focuses on color changing. The instruction is clear and easy to use (once it actually works). 
+I am one of those who had a lot of trouble with this tool. I managed to get it working by using a Windows system instead of a Mac. I was pleasantly surprised to find out that Tinkerbelle mainly focuses on color changing of the light, which is a good fit to the design of the device. The instruction is clear and easy to use (once it actually works). 
 
 ## Part D. Wizard the device
 
@@ -88,7 +88,7 @@ Since the tool has no light flashing ability, a alert sound would be played once
 
 **What concerns or opportunitities are influencing the way you've designed the device to look?**
 
-Thermometer would look like -- using the familiar mental image of a thermometer, the look of the device attempts to convey its usage. Since it is a floating device, there is no concern with protection. It is important that the light on the device needs to be big enough to attract attention. 
+The device is designed to somewhat resemble a thermometer -- using the familiar mental image of a thermometer, the look of the device attempts to convey its usage to the user. Since the device might be taken outdoors, it needs a relatively solid structural build. It is also important that the light on the device needs to be big enough to attract attention. 
 
 ## Part F. Record
 
