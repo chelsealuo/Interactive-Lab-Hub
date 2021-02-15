@@ -1,30 +1,9 @@
 
-
-# Staging Interaction
-
-In the original stage production of Peter Pan, Tinker Bell was represented by a darting light created by a small handheld mirror off-stage, reflecting a little circle of light from a powerful lamp. Tinkerbell communicates her presence through this light to the other characters. See more info [here](https://en.wikipedia.org/wiki/Tinker_Bell). 
-
-There is no actor that plays Tinkerbell--her existence in the play comes from the interactions that the other characters have with her.
-
-
-
-For lab this week, we draw on this and other inspirations from theatre to stage interactions with a device where the main mode of display/output for the interactive device you are designing is lighting. You will plot the interaction with a storyboard, and use your computer and a smartphone to experiment with what the interactions will look and feel like. _Make sure you read all the instructions and understand the whole of the laboratory activity before starting!_
-
-
-
 ## Prep
 
 1. Set up [your Github "Lab Hub" repository](../../../) by [following these instructions](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/blob/2021Spring/readings/Submitting%20Labs.md).
 2. Set up the README.md for your Hub repository (for instance, so that it has your name and points to your own Lab 1) and [learn how](https://guides.github.com/features/mastering-markdown/) to post links to your submissions on your readme.md so we can find them easily.
 
-### For lab, you will need:
-
-1. Paper
-1. Markers/ Pen
-1. Smart Phone--Main required feature is that the phone needs to have a browser and display a webpage.
-1. Computer--we will use your computer to host a webpage which also features controls
-1. Found objects and materials--you’ll have to costume your phone so that it looks like some other device. These materials can include doll clothes, a paper lantern, a bottle, human clothes, a pillow case. Be creative!
-1. Scissors
 
 ### Deliverables for this lab are: 
 1. Storyboard
@@ -50,14 +29,12 @@ E) [Costume the device](#part-e-costume-the-device)
 F) [Record the interaction](#part-f-record)
 
 ## The Report
-This readme.md page in your own repository should be edited to include the work you have done. You can delete everything but the headers and the sections between the **stars**. Write the answers to the questions under the starred sentences. Include any material that explains what you did in this lab hub folder, and link it in the readme.
-
 Labs are due on Mondays. Make sure this page is linked to on your main class hub page.
 
 ## Part A. Plan 
 **Describe your setting, players, activity and goals here.**
 
-For this lab, the idea is a outdoor thermometer device that would show a certain color according to the temperature of it's surrounding. The setting would be both indoor and outdoor environment, ideally with high fluctuation in terms of temperature change, and the player would be anyone who wants to monitor the change in temperature with immediate update -- this would be useful for someone who went on hiking. The activity would be the player would be notified by the changing color on the device, to know the updated status of the surrounding temperature. The goal would be to notify the player as soon as possible if temperature has changed in his or her surrounding environment, this is especially important in the case of a emergency.
+For this lab, the idea is a outdoor thermometer device that would show a certain color according to the temperature of it's surrounding. The setting would be in both indoor and outdoor environment, ideally with high fluctuation of temperature changes, and the player would be anyone who wants to monitor the change in temperature with immediate notice -- this would be useful for someone who went on hiking, camping, or just lives in an area with such weather. The activity would be that the player gets notified by the changing color on the device, to know the updated status of the surrounding temperature. The goal would be to notify the player as soon as possible if temperature has changed in his or her surrounding environment, this is especially important in the case of a emergency.
 
 **Include a picture of your storyboard here**
 
@@ -72,20 +49,14 @@ People reflected on how feasible the interaction would be for this prototype. Al
 
 **Are there things that seemed better on paper than acted out?**
 
-One immediate difference that I noticed is the possibility of the change in color might not be too obvious. Also, it might be awkward if one needs to consistently look at a floating light. Therefore, it might be important to make sure the message is delivered to the users. 
+One immediate difference that I noticed is that the change in color of the light might not be obvious. Also, it might be awkward if one needs to consistently look at a light while doing something else. Therefore, it might be important to make sure the message is delivered to the users. 
 
 **Are there new ideas that occur to you or your collaborators that come up from the acting?**
 
-The light could flash if the temperature suddenly dropped or raised (adjustable by the player) for a certain degree.
+The light could flash if the temperature suddenly dropped or raised by a certain degree (adjustable by the player).
 
 
 ## Part C. Prototype the device
-
-You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
-
-Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
-
-We invented this tool for this lab! 
 
 **Give us feedback on Tinkerbelle.**
 
@@ -97,13 +68,16 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 **Include your first attempts at recording the set-up video here.**
 
-[link to video](https://drive.google.com/file/d/1ZrhD07779RQylEMvxLWs9bNYHvLv4fcc/view?usp=sharing)
+[link to the video](https://drive.google.com/file/d/1IqeaLX3j5p3KZUlPwewfNocZKMMiie10/view?usp=sharing)
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
 **Show the follow-up work here.**
 
 Since the tool has no light flashing ability, a alert sound would be played once the temperature drop below a certain point. 
+
+[link to the updated interaction](https://drive.google.com/file/d/1NnhnhjaSOxh5XXtVswqW73Ac0lsm-AOY/view?usp=sharing)
+
 
 ## Part E. Costume the device
 
@@ -120,11 +94,11 @@ Thermometer would look like -- using the familiar mental image of a thermometer,
 
 **Take a video of your prototyped interaction.**
 
-[link to video](https://drive.google.com/file/d/14tqaYdl-JqIHhkofs_QQji7V9Xb7i0Xv/view?usp=sharing)
+[link to the video](https://drive.google.com/file/d/1hu3VkEF5ov88efuwnkTRUnazY4hUlfZi/view?usp=sharing)
 
 **Please indicate anyone you collaborated with on this Lab.**
 
-My mom helped me with some of the filming. I also discussed with Jiadong Lou about the idea. 
+My mom helped me with some of the filming. I also discussed with Jiadong Lou about the idea in details. 
 
 # Staging Interaction, Part 2 
 
