@@ -68,7 +68,9 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 
 **Include your first attempts at recording the set-up video here.**
 
-[link to the video](https://drive.google.com/file/d/1IqeaLX3j5p3KZUlPwewfNocZKMMiie10/view?usp=sharing)
+[link to the tinkerbelle setup video](https://drive.google.com/file/d/1ZrhD07779RQylEMvxLWs9bNYHvLv4fcc/view?usp=sharing)
+
+[link to the first attempt at sketched out interaction](https://drive.google.com/file/d/1IqeaLX3j5p3KZUlPwewfNocZKMMiie10/view?usp=sharing)
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
 
@@ -76,7 +78,7 @@ Now, hange the goal within the same setting, and update the interaction with the
 
 Since the tool has no light flashing ability, a alert sound would be played once the temperature drop below a certain point. 
 
-[link to the updated interaction](https://drive.google.com/file/d/1NnhnhjaSOxh5XXtVswqW73Ac0lsm-AOY/view?usp=sharing)
+[link to the updated interaction with tinkerbelle](https://drive.google.com/file/d/1NnhnhjaSOxh5XXtVswqW73Ac0lsm-AOY/view?usp=sharing)
 
 
 ## Part E. Costume the device
