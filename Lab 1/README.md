@@ -113,13 +113,13 @@ You will be assigned three partners from another group. Go to their github pages
 
 **Summarize feedback from your partners here.**
 
-Person 1:
+xl863:
 The idea is very smart and practical. As is described in the "Plan" part, the device could be deployed under both outdoor and indoor circumstances, from hiking to staying at home. Changing color with alarm is also an ingenious output. One thing I would suggest is that, since it could apply to a myriad of scenarios, and different users have diverse temperature sensing, maybe it would help that you make the device more personalized and adaptive to various scenarios. Also, you could highlight the device's functionality of warning, which makes it differentiated from a thermometer.
 
-Person 2:
+yz2696:
 In the video, I saw when the temperature goes down and reaches certain threshold, the thermometer will alarm and flash in blue light. The user responds to the thermometer by wearing clothes or blanket. The pipe in my apartment froze and bursted because of the low tempteraure, so I think this thermometer will have wide application. The video is clear and demonstrate the idea, if possible, adding the action of turning on the heater, and also show us what if the temperature is too high what will happen will be more comprehensive.
 
-Person 3:
+jl3937:
 By watching the video, I can tell that the device will alert the user when the temperature went too high or too low. The user will be able to take actions based on the warning from the device. The prototype device is also very well designed. The goal of the device is to remind user about room temperature. I would suggest to add more interaction to the science. For example, perhaps users can ask the device about what actions can be taken, then the device will respond with the best action.
 
 ## Make it your own
