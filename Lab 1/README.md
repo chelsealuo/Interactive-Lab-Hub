@@ -119,6 +119,9 @@ The idea is very smart and practical. As is described in the "Plan" part, the de
 Person 2:
 In the video, I saw when the temperature goes down and reaches certain threshold, the thermometer will alarm and flash in blue light. The user responds to the thermometer by wearing clothes or blanket. The pipe in my apartment froze and bursted because of the low tempteraure, so I think this thermometer will have wide application. The video is clear and demonstrate the idea, if possible, adding the action of turning on the heater, and also show us what if the temperature is too high what will happen will be more comprehensive.
 
+Person 3:
+By watching the video, I can tell that the device will alert the user when the temperature went too high or too low. The user will be able to take actions based on the warning from the device. The prototype device is also very well designed. The goal of the device is to remind user about room temperature. I would suggest to add more interaction to the science. For example, perhaps users can ask the device about what actions can be taken, then the device will respond with the best action.
+
 ## Make it your own
 
 Do last week’s assignment again, but this time: 
