@@ -130,6 +130,7 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 **Document everything here.**
+The device is similar to the one from the previous part. However, the new device now has following functionality that allows it to alert the user better, without interrupting the work. 
 
 ![](images/new_storyboard.png)
 
