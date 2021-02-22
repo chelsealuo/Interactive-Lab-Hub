@@ -131,7 +131,7 @@ Do last week’s assignment again, but this time:
 
 **Document everything here.**
 
-![](images/storyboard_2.jpg)
+![](images/storyboard_2.png)
 
 [link to the video](https://drive.google.com/file/d/1G6RRwmF0ql6hsU2OPYZf1pmj41DPefBN/view?usp=sharing)
 
