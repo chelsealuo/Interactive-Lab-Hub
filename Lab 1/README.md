@@ -58,6 +58,13 @@ The light could flash if the temperature suddenly dropped or raised by a certain
 
 ## Part C. Prototype the device
 
+<<<<<<< HEAD
+=======
+We invented this tool for this lab! 
+
+If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
+
+>>>>>>> 2226ae6286232393c4220ed9e64800cb41deedc8
 **Give us feedback on Tinkerbelle.**
 
 I am one of those who had a lot of trouble with this tool. I managed to get it working by using a Windows system instead of a Mac. I was pleasantly surprised to find out that Tinkerbelle mainly focuses on color changing of the light, which is a good fit to the design of the device. The instruction is clear and easy to use (once it actually works). 
@@ -129,6 +136,7 @@ Do last week’s assignment again, but this time:
 2) You can use any modality (e.g., vibration, sound) to prototype the behaviors, 
 3) We will be grading with an emphasis on creativity. 
 
+<<<<<<< HEAD
 **Document everything here.**
 The device is similar to the one from the previous part. However, the new device now has following functionality that allows it to alert the user better, without interrupting the work. The device would go to the user when it senses a drastic change in temperature.
 
@@ -136,3 +144,6 @@ The device is similar to the one from the previous part. However, the new device
 
 [link to the video](https://drive.google.com/file/d/1G6RRwmF0ql6hsU2OPYZf1pmj41DPefBN/view?usp=sharing)
 
+=======
+**Document everything here. (Particularly we'd like to see the storyboard and video, although photos of the prototype are also great.)**
+>>>>>>> 2226ae6286232393c4220ed9e64800cb41deedc8
