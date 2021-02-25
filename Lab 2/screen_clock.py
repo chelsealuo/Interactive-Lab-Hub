@@ -4,6 +4,7 @@ import digitalio
 import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
+from time import strftime, sleep
 
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
@@ -66,6 +67,17 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
+    clocktime = (strftime("%m/%d/%Y %H:%M:%S"), end="", flush=True)
+    # print("\r", end="", flush=True)
+
+    y = top
+    draw.text((x, y), clocktime, font=font, fill="#FFFFFF")
+    # y += font.getsize(IP)[1]
+    # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
+    # y += font.getsize(WTTR)[1]
+    # draw.text((x, y), USD, font=font, fill="#0000FF")
+    # y += font.getsize(USD)[1]
+    # draw.text((x, y), Temp, font=font, fill="#FF00FF")
 
     # Display image.
     disp.image(image, rotation)
