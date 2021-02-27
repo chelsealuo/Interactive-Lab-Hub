@@ -69,14 +69,22 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
+
+
     clocktime = strftime("%H:%M:%S")
     dayWeek = strftime("%A")
+    y = top
     # print("\r", end="", flush=True)
 
-    y = top
-    draw.text((x, y), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
-    y += font.getsize(dayWeek)[1]
-    draw.text((x, y), clocktime, font=font, fill="#FFFFFF")
+    if buttonA.value and not buttonB.value:
+        display.fill(red) # set the screen to the users color
+        dateTime = strftime("%m/%d/%Y")
+        draw.text((x, y), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
+
+    else: 
+        draw.text((x, y), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        y += font.getsize(dayWeek)[1]
+        draw.text((x, y), clocktime, font=font, fill="#FFFFFF")
 
     # y += font.getsize(IP)[1]
     # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
