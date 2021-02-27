@@ -55,6 +55,8 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
+fontForTimeOfWeek = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
+
 font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 
 # Turn on the backlight
@@ -68,10 +70,14 @@ while True:
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
     clocktime = strftime("%m/%d/%Y %H:%M:%S")
+    dayWeek = strftime("%A")
     # print("\r", end="", flush=True)
 
     y = top
+    draw.text((x, y), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+    y += font.getsize(dayWeek)[1]
     draw.text((x, y), clocktime, font=font, fill="#FFFFFF")
+
     # y += font.getsize(IP)[1]
     # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
     # y += font.getsize(WTTR)[1]
