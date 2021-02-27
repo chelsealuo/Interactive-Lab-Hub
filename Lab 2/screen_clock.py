@@ -79,7 +79,7 @@ while True:
     # print("\r", end="", flush=True)
 
     if buttonA.value and not buttonB.value:
-        display.fill(red) # set the screen to the users color
+        # disp.fill(red)
         dateTime = strftime("%m/%d/%Y")
         draw.text((x, y), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
 
