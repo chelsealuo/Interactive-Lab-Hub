@@ -57,7 +57,7 @@ x = 0
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 fontForTimeOfWeek = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
 
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 24)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -69,7 +69,7 @@ while True:
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
-    clocktime = strftime("%m/%d/%Y %H:%M:%S")
+    clocktime = strftime("%H:%M:%S")
     dayWeek = strftime("%A")
     # print("\r", end="", flush=True)
 
