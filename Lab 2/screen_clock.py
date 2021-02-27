@@ -82,7 +82,7 @@ while True:
     x_1 = width/2 - font.getsize(clocktime)[0]/2
     y_1 = height/2 - font.getsize(clocktime)[1]/2
     x_2 = width/2 - font.getsize(dayWeek)[0]/2
-    y_2 = height/2 - font.getsize(dayWeek)[1]/2 - font.getsize(clocktime)[1]/2
+    y_2 = height/2 - font.getsize(dayWeek)[1] - font.getsize(clocktime)[1]/2
     # print("\r", end="", flush=True)
 
     if buttonA.value and not buttonB.value:
@@ -93,7 +93,7 @@ while True:
     else: 
         draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
-        draw.text((x, y), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
 
     # y += font.getsize(IP)[1]
     # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
