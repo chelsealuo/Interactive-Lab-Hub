@@ -55,9 +55,9 @@ x = 0
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-fontForTimeOfWeek = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 26)
+fontForTimeOfWeek = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 30)
 
-font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 26)
+font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 28)
 
 # Turn on the backlight
 backlight = digitalio.DigitalInOut(board.D22)
@@ -77,8 +77,8 @@ while True:
     dayWeek = strftime("%A")
     y = top
 
-    x_1 = width/2 - font.getsize(dayWeek)[0]/2
-    y_1 = height/2 - font.getsize(dayWeek)[1]/2
+    x_1 = width/2 - font.getsize(clocktime)[0]/2
+    y_1 = height/2 - font.getsize(clocktime)[1]/2
     # print("\r", end="", flush=True)
 
     if buttonA.value and not buttonB.value:
@@ -87,9 +87,9 @@ while True:
         draw.text((x, y), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
 
     else: 
-        draw.text((x_1, y_1), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
-        y += font.getsize(dayWeek)[1]
-        draw.text((x, y), clocktime, font=font, fill="#FFFFFF")
+        draw.text((x_1, y_1), clocktime, font=font, fill="#FFFFFF")
+        y += font.getsize(clocktime)[1]
+        draw.text((x, y), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
 
     # y += font.getsize(IP)[1]
     # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
