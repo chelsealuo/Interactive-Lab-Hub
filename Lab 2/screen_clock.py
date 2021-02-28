@@ -70,10 +70,12 @@ buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
 
+t = 25*60
+
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    t = 25*60
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
@@ -97,15 +99,13 @@ while True:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
 
-        # for i in range(4):
-        while t:
-            mins = t//60
-            secs = t%60
-            currentt = '{:02d}:{:02d}.format(mins, secs)'
+        mins = t//60
+        secs = t%60
+        currentt = "{:02d}:{:02d}.format(mins, secs)"
 
-            timer = "Pomodoro Timer: " + currentt
-            draw.text((x_3, y_3+14), currentt, font=fontForTimeOfWeek, fill="#FFFFFF")
-            t -=1
+        timer = "Pomodoro Timer: " + currentt
+        draw.text((x_3, y_3+14), timer, font=fontForTimeOfWeek, fill="#FFFFFF")
+        t -=1
         # draw.text((x_3, y_3+20), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
 
 
