@@ -106,7 +106,7 @@ while True:
 
         timer = "Pomodoro Timer: "
         draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
-        draw.text((x_3, y_3+36), currentt, font=pomodoroClockFont, fill="#FFFFFF")
+        draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
         t -=1
         # draw.text((x_3, y_3+20), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
 
