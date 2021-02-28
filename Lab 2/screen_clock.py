@@ -78,12 +78,12 @@ while True:
     image_ratio = image.width / image.height
     screen_ratio = width / height
     if screen_ratio < image_ratio:
-        scaled_width = image.width * height // image.height /2
+        scaled_width = image.width * height // image.height
         scaled_height = height/2
     else:
-        scaled_width = width/2
-        scaled_height = image.height * width // image.width /2
-    image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
+        scaled_width = width
+        scaled_height = image.height * width // image.width
+    image = image.resize((30, 50), Image.BICUBIC)
 
     # Crop and center the image
     x = scaled_width // 2 - width // 2
