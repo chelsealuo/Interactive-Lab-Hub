@@ -5,7 +5,6 @@ import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 from time import strftime, sleep
-from numpy import random
 
 
 
@@ -70,13 +69,6 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
-def getRandomXY():
-    x = random.randint(240, size=10)
-    y = random.randint(135, size=10) 
-    return x, y
-
-x, y = getRandomXY()
-
 
 while True:
     # Draw a black filled box to clear the image.
@@ -88,8 +80,6 @@ while True:
     dayWeek = strftime("%A")
     dateTime = strftime("%m/%d/%Y")
     y = top
-    newimage = Image.open("ti.png")
-
 
     x_1 = width/2 - font.getsize(clocktime)[0]/2
     y_1 = height/2 - font.getsize(clocktime)[1]/2
@@ -100,18 +90,10 @@ while True:
     y_3 = height/2 - font.getsize(dateTime)[1]/2
 
 
-
-    fonttemp = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
-    offset_x = 1
-    offset_y = 1
-    for i in range(10):
-        draw.text((x[i], y[i]), "❄", font=fonttemp, fill="#0000FF")
-        x[i] = x[i] + offset_x if x[i] + offset_x < width else x[i] + offset_x - width
-        y[i] = y[i] + offset_y if y[i] + offset_y < height else y[i] + offset_y - height
-
     if buttonA.value and not buttonB.value:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
+        draw.line([(x_3, y_3-10), (x_3+20, y_3-10)], fill=red, width=2)
         disp.image(image, rotation)
 
 
