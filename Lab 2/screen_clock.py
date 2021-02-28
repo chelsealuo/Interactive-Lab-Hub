@@ -84,7 +84,7 @@ while True:
     x_2 = width/2 - font.getsize(dayWeek)[0]/2
     y_2 = height/2 - font.getsize(dayWeek)[1] - font.getsize(clocktime)[1]/2
 
-    x_3 = width/2 - font.getsize(dateTime)[0]/2
+    x_3 = width/2 - font.getsize(dateTime)[0]/2 + 2
     y_3 = height/2 - font.getsize(dateTime)[1]/2
     # print("\r", end="", flush=True)
 
