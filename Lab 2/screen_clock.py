@@ -69,6 +69,8 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
+t = 25*60
+
 
 while True:
     # Draw a black filled box to clear the image.
@@ -79,6 +81,8 @@ while True:
     clocktime = strftime("%H:%M:%S")
     dayWeek = strftime("%A")
     dateTime = strftime("%m/%d/%Y")
+
+
     y = top
 
     x_1 = width/2 - font.getsize(clocktime)[0]/2
@@ -90,9 +94,23 @@ while True:
     y_3 = height/2 - font.getsize(dateTime)[1]/2
 
 
-    if buttonA.value and not buttonB.value:
+    if buttonB.value and not buttonA.value:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
+
+        for i in range(4):
+        while t:
+            mins = t//60
+            secs = t%60
+            currentt = '{:02d}:{:02d}.format(mins, secs)'
+
+            timer = "Pomodoro Timer: " + currentt
+            draw.text((x_3, y_3+5), timer, font=fontForTimeOfWeek, fill="#FFFFFF")
+            t -=1
+        draw.text((x_3, y_3+9), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
+
+
+
         draw.line([(x_3, y_3-10), (x_3+100, y_3-10)], fill="red", width=3)
         draw.line([(x_3, y_3-13), (x_3+95, y_3-13)], fill="orange", width=3)
         draw.line([(x_3, y_3-16), (x_3+90, y_3-16)], fill="yellow", width=3)
