@@ -68,6 +68,14 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
+def getRandomXY():
+    x = random.randint(240, size=10)
+    y = random.randint(135, size=10) 
+    return x, y
+
+x, y = getRandomXY()
+
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -89,7 +97,18 @@ while True:
     x_3 = width/2 - font.getsize(dateTime)[0]/2 + 2
     y_3 = height/2 - font.getsize(dateTime)[1]/2
 
+
+
+    font = getFont(18)
+    offset_x = 1
+    offset_y = 1
+    for i in range(10):
+        draw.text((x[i], y[i]), "❄", font=font, fill="#0000FF")
+        x[i] = x[i] + offset_x if x[i] + offset_x < width else x[i] + offset_x - width
+        y[i] = y[i] + offset_y if y[i] + offset_y < height else y[i] + offset_y - height
+
     if buttonA.value and not buttonB.value:
+
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
         disp.image(image, rotation)
 
