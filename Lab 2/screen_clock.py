@@ -111,10 +111,10 @@ while True:
         scaled_height = image.height * width // image.width
     image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
 
-# Crop and center the image
-x = scaled_width // 2 - width // 2
-y = scaled_height // 2 - height // 2
-image = image.crop((x, y, x + width, y + height))
+    # Crop and center the image
+    x = scaled_width // 2 - width // 2
+    y = scaled_height // 2 - height // 2
+    image = image.crop((x, y, x + width, y + height))
 
     # y += font.getsize(IP)[1]
     # draw.text((x, y), WTTR, font=font, fill="#FFFF00")
