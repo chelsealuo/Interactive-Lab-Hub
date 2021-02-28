@@ -105,8 +105,8 @@ while True:
         currentt = "{:02d}:{:02d}".format(mins, secs)
 
         timer = "Pomodoro Timer: "
-        draw.text((x_3, y_3+20), timer, font=pomodoroClockFont, fill="#FFFFFF")
-        draw.text((x_3, y_3+28), currentt, font=pomodoroClockFont, fill="#FFFFFF")
+        draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
+        draw.text((x_3, y_3+36), currentt, font=pomodoroClockFont, fill="#FFFFFF")
         t -=1
         # draw.text((x_3, y_3+20), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
 
