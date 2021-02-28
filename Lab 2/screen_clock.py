@@ -101,7 +101,7 @@ while True:
 
 
 
-    fonttemp = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", size)
+    fonttemp = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
     offset_x = 1
     offset_y = 1
     for i in range(10):
