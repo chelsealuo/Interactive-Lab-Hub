@@ -98,7 +98,7 @@ while True:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
 
-        for i in range(4):
+        # for i in range(4):
         while t:
             mins = t//60
             secs = t%60
@@ -129,4 +129,4 @@ while True:
 
 
     # Display image.
-    time.sleep(0.01)
+    time.sleep(1)
