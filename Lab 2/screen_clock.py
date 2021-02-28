@@ -101,11 +101,11 @@ while True:
 
 
 
-    font = getFont(18)
+    fonttemp = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", size)
     offset_x = 1
     offset_y = 1
     for i in range(10):
-        draw.text((x[i], y[i]), "❄", font=font, fill="#0000FF")
+        draw.text((x[i], y[i]), "❄", font=fonttemp, fill="#0000FF")
         x[i] = x[i] + offset_x if x[i] + offset_x < width else x[i] + offset_x - width
         y[i] = y[i] + offset_y if y[i] + offset_y < height else y[i] + offset_y - height
 
