@@ -114,4 +114,4 @@ while True:
     # draw.text((x, y), Temp, font=font, fill="#FF00FF")
 
     # Display image.
-    time.sleep(1)
+    # time.sleep(1)
