@@ -78,11 +78,11 @@ while True:
     image_ratio = image.width / image.height
     screen_ratio = width / height
     if screen_ratio < image_ratio:
-        scaled_width = image.width * height // image.height
-        scaled_height = height
+        scaled_width = image.width * height // image.height /2
+        scaled_height = height/2
     else:
-        scaled_width = width
-        scaled_height = image.height * width // image.width
+        scaled_width = width/2
+        scaled_height = image.height * width // image.width /2
     image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
 
     # Crop and center the image
@@ -108,7 +108,7 @@ while True:
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-        disp.image(image, rotation)
+        # disp.image(image, rotation)
 
 
     else: 
@@ -127,5 +127,5 @@ while True:
     # draw.text((x, y), Temp, font=font, fill="#FF00FF")
 
     # Display image.
-    # disp.image(image, rotation)
+    disp.image(image, rotation)
     time.sleep(1)
