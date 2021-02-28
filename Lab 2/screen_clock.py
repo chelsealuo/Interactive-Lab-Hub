@@ -93,7 +93,7 @@ while True:
     if buttonA.value and not buttonB.value:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-        draw.line([(x_3, y_3-10), (x_3+20, y_3-10)], fill=red, width=2)
+        draw.line([(x_3, y_3-10), (x_3+20, y_3-10)], fill="red", width=2)
         disp.image(image, rotation)
 
 
