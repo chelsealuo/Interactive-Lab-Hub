@@ -94,6 +94,7 @@ while True:
 
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
         draw.line([(x_3, y_3-10), (x_3+100, y_3-10)], fill="red", width=2)
+        draw.line([(x_3, y_3-8), (x_3+90, y_3-8)], fill="yellow", width=2)
         disp.image(image, rotation)
 
 
