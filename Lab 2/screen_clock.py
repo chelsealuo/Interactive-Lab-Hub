@@ -74,23 +74,6 @@ while True:
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
-    image = Image.open("red.jpg")
-    image_ratio = image.width / image.height
-    screen_ratio = width / height
-    if screen_ratio < image_ratio:
-        scaled_width = image.width * height // image.height
-        scaled_height = height/2
-    else:
-        scaled_width = width
-        scaled_height = image.height * width // image.width
-    image = image.resize((30, 50), Image.BICUBIC)
-
-    # Crop and center the image
-    x = scaled_width // 2 - width // 2
-    y = scaled_height // 2 - height // 2
-    image = image.crop((x, y, x + width, y + height))
-
-
     clocktime = strftime("%H:%M:%S")
     dayWeek = strftime("%A")
     dateTime = strftime("%m/%d/%Y")
@@ -108,7 +91,6 @@ while True:
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-        # disp.image(image, rotation)
 
 
     else: 
