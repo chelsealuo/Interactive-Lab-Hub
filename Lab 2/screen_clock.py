@@ -97,6 +97,9 @@ while True:
         draw.line([(x_3, y_3-13), (x_3+95, y_3-13)], fill="orange", width=3)
         draw.line([(x_3, y_3-16), (x_3+90, y_3-16)], fill="yellow", width=3)
         draw.line([(x_3, y_3-19), (x_3+85, y_3-19)], fill="green", width=3)
+        draw.line([(x_3, y_3-22), (x_3+80, y_3-22)], fill="blue", width=3)
+        draw.line([(x_3, y_3-25), (x_3+75, y_3-25)], fill="purple", width=3)
+
         disp.image(image, rotation)
 
 
