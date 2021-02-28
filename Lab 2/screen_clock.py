@@ -73,7 +73,7 @@ def image_formatting(imagef, width, height):
     imagef = imagef.resize((240, 135), Image.BICUBIC)
 
     return imagef
-    
+
 
 while True:
     # Draw a black filled box to clear the image.
@@ -100,7 +100,7 @@ while True:
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
 
-        image3 = Image.open("red.jpg")
+        image3 = Image.open("ti.png")
         image3 = image_formatting(image3, width, height)
     
         draw = ImageDraw.Draw(image3)
