@@ -93,7 +93,6 @@ while True:
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-        disp.image(newimage, rotation)
         disp.image(image, rotation)
 
 
@@ -101,6 +100,7 @@ while True:
         draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(newimage, rotation)
         disp.image(image, rotation)
 
 
