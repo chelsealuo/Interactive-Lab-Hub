@@ -78,6 +78,8 @@ while True:
     dayWeek = strftime("%A")
     dateTime = strftime("%m/%d/%Y")
     y = top
+    newimage = Image.open("trialimage.png")
+
 
     x_1 = width/2 - font.getsize(clocktime)[0]/2
     y_1 = height/2 - font.getsize(clocktime)[1]/2
@@ -91,6 +93,7 @@ while True:
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(newimage, rotation)
         disp.image(image, rotation)
 
 
