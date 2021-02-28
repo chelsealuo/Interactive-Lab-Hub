@@ -78,7 +78,7 @@ while True:
     dayWeek = strftime("%A")
     dateTime = strftime("%m/%d/%Y")
     y = top
-    newimage = Image.open("trialimage.png")
+    newimage = Image.open("ti.png")
 
 
     x_1 = width/2 - font.getsize(clocktime)[0]/2
