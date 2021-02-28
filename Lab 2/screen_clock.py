@@ -92,16 +92,22 @@ while True:
 
     if buttonA.value and not buttonB.value:
         # disp.fill(red)
+
+        image3 = Image.open("red.jpg")
+        image3 = image_formatting(image3, width, height)
+    
+        draw = ImageDraw.Draw(image3)
+
+
         draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-        disp.image(image, rotation)
+        # disp.image(image, rotation)
 
 
     else: 
         draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
-        disp.image(newimage, rotation)
-        # disp.image(image, rotation)
+        disp.image(image, rotation)
 
 
 
@@ -114,4 +120,5 @@ while True:
     # draw.text((x, y), Temp, font=font, fill="#FF00FF")
 
     # Display image.
+    disp.image(image3, rotation)
     time.sleep(0.01)
