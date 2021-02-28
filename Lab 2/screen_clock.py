@@ -5,8 +5,6 @@ import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 from time import strftime, sleep
-import pytz
-
 
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
@@ -70,84 +68,38 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
-def image_formatting(imagef, width, height):
-    imagef = imagef.convert('RGB')
-    imagef = imagef.resize((240, 135), Image.BICUBIC)
-
-    return imagef
-
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
-    # clocktime = strftime("%H:%M:%S")
-    # dayWeek = strftime("%A")
-    # dateTime = strftime("%m/%d/%Y")
-    # y = top
-    # newimage = Image.open("ti.png")
+    clocktime = strftime("%H:%M:%S")
+    dayWeek = strftime("%A")
+    dateTime = strftime("%m/%d/%Y")
+    y = top
+    newimage = Image.open("ti.png")
 
 
-    # x_1 = width/2 - font.getsize(clocktime)[0]/2
-    # y_1 = height/2 - font.getsize(clocktime)[1]/2
-    # x_2 = width/2 - font.getsize(dayWeek)[0]/2
-    # y_2 = height/2 - font.getsize(dayWeek)[1] - font.getsize(clocktime)[1]/2
+    x_1 = width/2 - font.getsize(clocktime)[0]/2
+    y_1 = height/2 - font.getsize(clocktime)[1]/2
+    x_2 = width/2 - font.getsize(dayWeek)[0]/2
+    y_2 = height/2 - font.getsize(dayWeek)[1] - font.getsize(clocktime)[1]/2
 
-    # x_3 = width/2 - font.getsize(dateTime)[0]/2 + 2
-    # y_3 = height/2 - font.getsize(dateTime)[1]/2
+    x_3 = width/2 - font.getsize(dateTime)[0]/2 + 2
+    y_3 = height/2 - font.getsize(dateTime)[1]/2
 
-    # if buttonA.value and not buttonB.value:
-    #     draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
-    #     disp.image(image, rotation)
+    if buttonA.value and not buttonB.value:
+        draw.text((x_3, y_3), dateTime, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(image, rotation)
 
 
-    # else: 
-    #     draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
-    #     y += font.getsize(clocktime)[1]
-    #     draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
-    #     disp.image(image, rotation)
+    else: 
+        draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
+        y += font.getsize(clocktime)[1]
+        draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(image, rotation)
 
 
     # Display image.
-    # time.sleep(0.01)
-
-    x = 4
-    y = 10
-
-    if buttonB.value and not buttonA.value:  # just button A pressed
-        image3 = Image.open("/home/pi/Interactive-Lab-Hub/Lab 2/beijing.jpg")
-        image3 = image_formatting(image3, width, height)
-    
-        draw = ImageDraw.Draw(image3)
-
-        tz_NY = pytz.timezone('PRC') 
-        datetime_NY = datetime.now(tz_NY)
-        draw.text((4, 0), "Beijing:", fill="#000000")
-        draw.text((x, y), datetime_NY.strftime("%H:%M:%S%p"), font=font, fill="#000000")
-
-    elif buttonA.value and not buttonB.value:  # just button B pressed
-        image3 = Image.open("/home/pi/Interactive-Lab-Hub/Lab 2/telaviv.jpg")
-        image3 = image_formatting(image3, width, height)
-    
-        draw = ImageDraw.Draw(image3)
-
-        tz_NY = pytz.timezone('Asia/Tel_Aviv') 
-        datetime_NY = datetime.now(tz_NY)
-        draw.text((4, 0), "Tel Aviv:", fill="#000000")
-        draw.text((x, y), datetime_NY.strftime("%H:%M:%S%p"), font=font, fill="#000000")
-
-    else:
-        image3 = Image.open("/home/pi/Interactive-Lab-Hub/Lab 2/nyc.jpg")
-        image3 = image_formatting(image3, width, height)
-    
-        draw = ImageDraw.Draw(image3)
-
-        tz_NY = pytz.timezone('America/New_York') 
-        datetime_NY = datetime.now(tz_NY)
-        draw.text((4, 0), "New York:", fill="#000000")
-        draw.text((x, y), datetime_NY.strftime("%H:%M:%S%p"), font=font, fill="#000000")
-
-    # Display image.
-    disp.image(image3, rotation)
-    time.sleep(1)
+    time.sleep(0.01)
