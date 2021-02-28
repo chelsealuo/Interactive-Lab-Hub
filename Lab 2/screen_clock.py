@@ -68,6 +68,13 @@ backlight.value = True
 buttonA = digitalio.DigitalInOut(board.D23)
 buttonB = digitalio.DigitalInOut(board.D24)
 
+def image_formatting(imagef, width, height):
+    imagef = imagef.convert('RGB')
+    imagef = imagef.resize((240, 135), Image.BICUBIC)
+
+    return imagef
+    
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
