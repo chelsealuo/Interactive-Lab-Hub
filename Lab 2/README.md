@@ -174,6 +174,6 @@ After that git will ask you to login to your github account to upload.
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-
+An alert system for the clock when each session of the pomodoro clock period ends -- maybe playing an animation. 
 
 
