@@ -179,3 +179,5 @@ An alert system for the clock when each session of the pomodoro clock period end
 ![](sketch.png)
 
 
+Comment:
+Jiadong Lou: The idea of making a pomodoro clock is very interesting and practical. From the sketch, I really like that the future design will include animation and sound to remind the user. However, it will be really great if you can make the countdown a little bit larger. Because it's a pomodoro clock, maybe the date isn't as important as the countdown.
