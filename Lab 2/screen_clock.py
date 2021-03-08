@@ -72,8 +72,11 @@ buttonB = digitalio.DigitalInOut(board.D24)
 
 
 # t = 25*60
+# restt = 5*60
 
 t = 20
+
+restt = 5
 
 while True:
     # Draw a black filled box to clear the image.
@@ -105,10 +108,21 @@ while True:
         secs = t%60
         currentt = "{:02d}:{:02d}".format(mins, secs)
 
+        restmins = restt//60
+        restsecs = restt%60
+        resttime = "{:02d}:{:02d}".format(restmins, restsecs)
+
         timer = "Pomodoro Timer: "
-        resttime = "Time to take a break"
+        resting = "Time to rest"
+
         if currentt == "00:00":
-            draw.text((x_3, y_3+26), resttime, font=pomodoroClockFont, fill="#FFFFFF")
+            if restt = 0:
+                t = 25*60
+            else:
+                draw.text((x_3, y_3+26), resting, font=pomodoroClockFont, fill="#FFFFFF")
+                draw.text((x_3, y_3+26), resttime, font=pomodoroClockFont, fill="#FFFFFF")
+                restt -=1
+
         else:
             draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
