@@ -165,7 +165,7 @@ while True:
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
 
-        # disp.image(image, rotation)
+        disp.image(image, rotation)
 
 
 
