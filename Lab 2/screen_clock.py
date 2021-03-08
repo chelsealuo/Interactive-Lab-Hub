@@ -44,7 +44,8 @@ draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-disp.image(image, rotation)
+# disp.image(image, rotation)
+
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
 padding = -2
@@ -73,6 +74,9 @@ buttonB = digitalio.DigitalInOut(board.D24)
 
 # t = 25*60
 # restt = 5*60
+
+tomatoimage = Image.open("tomato.png")
+
 
 t = 20
 
@@ -117,23 +121,15 @@ while True:
 
         if currentt == "00:00":
             restimage = Image.open("coffee.png")
-            draw = ImageDraw.Draw(restimage)
-
             draw.text((x_3, y_3+26), resting, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), resttime, font=pomodoroClockFont, fill="#FFFFFF")
             restt -=1
             if restt == 0:
                 t = 25*60
-                
         else:
             draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
             t -=1
-
-
-
-        # draw.text((x_3, y_3+20), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
-
 
 
         draw.line([(x_3, y_3-10), (x_3+100, y_3-10)], fill="red", width=3)
@@ -150,6 +146,7 @@ while True:
         draw.text((x_1, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(tomatoimage, rotation)
         disp.image(image, rotation)
 
 
