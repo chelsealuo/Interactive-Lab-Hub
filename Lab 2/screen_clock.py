@@ -117,13 +117,14 @@ while True:
 
         if currentt == "00:00":
             restimage = Image.open("coffee.png")
+            draw = ImageDraw.Draw(restimage)
+
             draw.text((x_3, y_3+26), resting, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), resttime, font=pomodoroClockFont, fill="#FFFFFF")
             restt -=1
             if restt == 0:
                 t = 25*60
-            disp.image(restimage, rotation)
-
+                
         else:
             draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
