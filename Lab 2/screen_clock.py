@@ -84,6 +84,8 @@ t = 20
 restt = 5
 
 while True:
+    disp.image(tomatoimage, rotation)
+
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
@@ -148,7 +150,6 @@ while True:
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
         disp.image(image, rotation)
-        disp.image(tomatoimage, rotation)
 
 
     # Display image.
