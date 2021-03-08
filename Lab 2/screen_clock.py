@@ -75,7 +75,7 @@ buttonB = digitalio.DigitalInOut(board.D24)
 # t = 25*60
 # restt = 5*60
 
-# tomatoimage = Image.open("tomato.png")
+tomatoimage = Image.open("tomato.png")
 # tomatoimage = tomatoimage.crop((0, 0, 50, 100))
 
 
@@ -148,7 +148,7 @@ while True:
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
         disp.image(image, rotation)
-        # disp.image(image, rotation)
+        disp.image(tomatoimage, rotation)
 
 
     # Display image.
