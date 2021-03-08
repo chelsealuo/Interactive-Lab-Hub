@@ -177,7 +177,7 @@ After that git will ask you to login to your github account to upload.
 An alert system for the clock when each session of the pomodoro clock period ends -- maybe playing an animation. 
 
 ![](sketch.png)
-\
+
 [link to the video](https://drive.google.com/file/d/1Aa589hxdDQYGIPHTv01D-nSimTiOkfIv/view?usp=sharing) \
 
 Note: Time of the clock is changed for recording purposes.
