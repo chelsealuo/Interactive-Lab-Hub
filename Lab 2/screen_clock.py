@@ -116,7 +116,7 @@ while True:
         resting = "Time to rest"
 
         if currentt == "00:00":
-            image = Image.open("coffee.png")
+            restimage = Image.open("coffee.png")
             draw.text((x_3, y_3+26), resting, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), resttime, font=pomodoroClockFont, fill="#FFFFFF")
             restt -=1
@@ -127,6 +127,8 @@ while True:
             draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
             t -=1
+            disp.image(restimage, rotation)
+
 
 
         # draw.text((x_3, y_3+20), 'Time to rest.', font=fontForTimeOfWeek, fill="#FFFFFF")
