@@ -116,7 +116,7 @@ while True:
         resting = "Time to rest"
 
         if currentt == "00:00":
-            if restt = 0:
+            if restt == 0:
                 t = 25*60
             else:
                 draw.text((x_3, y_3+26), resting, font=pomodoroClockFont, fill="#FFFFFF")
