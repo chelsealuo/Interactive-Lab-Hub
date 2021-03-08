@@ -75,7 +75,7 @@ buttonB = digitalio.DigitalInOut(board.D24)
 # t = 25*60
 # restt = 5*60
 
-tomatoimage = Image.open("tomato.png")
+tomatoimage = Image.open("tomato_trial.png")
 # tomatoimage = tomatoimage.crop((1, 0, 50, 50))
 
 # Scale the image to the smaller screen dimension
