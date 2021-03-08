@@ -122,12 +122,12 @@ while True:
             restt -=1
             if restt == 0:
                 t = 25*60
+            disp.image(restimage, rotation)
 
         else:
             draw.text((x_3, y_3+26), timer, font=pomodoroClockFont, fill="#FFFFFF")
             draw.text((x_3, y_3+44), currentt, font=pomodoroClockFont, fill="#FFFFFF")
             t -=1
-            disp.image(restimage, rotation)
 
 
 
