@@ -77,8 +77,6 @@ buttonB = digitalio.DigitalInOut(board.D24)
 
 tomatoimage = Image.open("tomato.png")
 # tomatoimage = tomatoimage.crop((0, 0, 50, 100))
-disp.image(tomatoimage, rotation)
-
 
 
 t = 20
@@ -89,6 +87,7 @@ while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
 
+    disp.image(tomatoimage, rotation)
 
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
