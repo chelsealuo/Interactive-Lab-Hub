@@ -168,10 +168,16 @@ After that git will ask you to login to your github account to upload.
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
 
-**Take a video of your PiClock.**
+**Take a video of your PiClock.** \
+[link to the video](https://drive.google.com/file/d/11QbE8oUBz-msU6OgzcP-mLneX2w4CqJR/view?usp=sharing)
+
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
+An alert system for the clock when each session of the pomodoro clock period ends -- maybe playing an animation. 
+
+![](sketch.png)
 
 
-
+Comment:
+Jiadong Lou: The idea of making a pomodoro clock is very interesting and practical. From the sketch, I really like that the future design will include animation and sound to remind the user. However, it will be really great if you can make the countdown a little bit larger. Because it's a pomodoro clock, maybe the date isn't as important as the countdown.
