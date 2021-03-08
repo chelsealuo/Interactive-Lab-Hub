@@ -76,7 +76,7 @@ buttonB = digitalio.DigitalInOut(board.D24)
 # restt = 5*60
 
 tomatoimage = Image.open("tomato.png")
-tomatoimage = tomatoimage.crop((50, 50, 50, 50))
+tomatoimage = tomatoimage.crop((50, 0, 50, 50))
 
 
 t = 20
