@@ -43,12 +43,8 @@ rotation = 90
 draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-disp.image(image, rotation)
-
-tomatoimage = Image.open("tomato.png")
-tomatoimage = tomatoimage.crop((0, 0, 50, 100))
-disp.image(tomatoimage, rotation)
+# draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+# disp.image(image, rotation)
 
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
@@ -79,8 +75,8 @@ buttonB = digitalio.DigitalInOut(board.D24)
 # t = 25*60
 # restt = 5*60
 
-# tomatoimage = Image.open("tomato.png")
-# tomatoimage = tomatoimage.crop((0, 0, 50, 100))
+tomatoimage = Image.open("tomato.png")
+tomatoimage = tomatoimage.crop((0, 0, 50, 100))
 
 
 t = 20
@@ -151,7 +147,7 @@ while True:
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
         disp.image(image, rotation)
-        # disp.image(tomatoimage, rotation)
+        disp.image(tomatoimage, rotation)
 
 
 
