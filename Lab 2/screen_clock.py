@@ -36,7 +36,10 @@ disp = st7789.ST7789(
 # Make sure to create image with mode 'RGB' for full color.
 height = disp.width  # we swap height/width to rotate it to landscape!
 width = disp.height
-image = Image.new("RGB", (width, height))
+# image = Image.new("RGB", (width, height))
+image = Image.open("tomato_trial.png")
+
+
 rotation = 90
 
 # Get drawing object to draw on image.
