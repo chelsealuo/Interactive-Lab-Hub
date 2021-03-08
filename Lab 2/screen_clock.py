@@ -43,8 +43,8 @@ rotation = 90
 draw = ImageDraw.Draw(image)
 
 # Draw a black filled box to clear the image.
-# draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
-# disp.image(image, rotation)
+draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+disp.image(image, rotation)
 
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
@@ -76,7 +76,24 @@ buttonB = digitalio.DigitalInOut(board.D24)
 # restt = 5*60
 
 tomatoimage = Image.open("tomato.png")
-tomatoimage = tomatoimage.crop((1, 0, 50, 50))
+# tomatoimage = tomatoimage.crop((1, 0, 50, 50))
+
+# Scale the image to the smaller screen dimension
+image_ratio = tomatoimage.width / tomatoimage.height
+screen_ratio = width / height
+if screen_ratio < image_ratio:
+    scaled_width = tomatoimage.width * height // tomatoimage.height
+    scaled_height = height
+else:
+    scaled_width = width
+    scaled_height = tomatoimage.height * width // tomatoimage.width
+tomatoimage = tomatoimage.resize((scaled_width, scaled_height), Image.BICUBIC)
+
+# Crop and center the image
+x = scaled_width // 2 - width // 2
+y = scaled_height // 2 - height // 2
+tomatoimage = tomatoimage.crop((x, y, x + width, y + height))
+
 
 
 t = 20
@@ -143,11 +160,11 @@ while True:
 
 
     else: 
-        disp.image(tomatoimage, rotation)
-
         draw.text((x_1+5, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
+        disp.image(tomatoimage, rotation)
+
         # disp.image(image, rotation)
 
 
