@@ -177,7 +177,10 @@ After that git will ask you to login to your github account to upload.
 An alert system for the clock when each session of the pomodoro clock period ends -- maybe playing an animation. 
 
 ![](sketch.png)
+\
+[link to the video](https://drive.google.com/file/d/1Aa589hxdDQYGIPHTv01D-nSimTiOkfIv/view?usp=sharing) \
 
+Note: Time of the clock is changed for recording purposes.
 
 Comment:
-Jiadong Lou: The idea of making a pomodoro clock is very interesting and practical. From the sketch, I really like that the future design will include animation and sound to remind the user. However, it will be really great if you can make the countdown a little bit larger. Because it's a pomodoro clock, maybe the date isn't as important as the countdown.
+See comments in discussion
