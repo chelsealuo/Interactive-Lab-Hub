@@ -85,7 +85,7 @@ restt = 5
 
 while True:
     # Draw a black filled box to clear the image.
-    draw.rectangle((0, 0, width, height), outline=0, fill=0)
+    # draw.rectangle((0, 0, width, height), outline=0, fill=0)
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
     clocktime = strftime("%H:%M:%S")
