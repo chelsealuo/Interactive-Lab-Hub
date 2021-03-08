@@ -146,7 +146,7 @@ while True:
         draw.text((x_1+5, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
-        disp.image(tomatoimage, rotation)
+        disp.image(tomatoimage)
         # disp.image(image, rotation)
 
 
