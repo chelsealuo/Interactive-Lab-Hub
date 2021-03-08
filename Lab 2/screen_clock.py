@@ -160,13 +160,12 @@ while True:
 
 
     else: 
-        draw = ImageDraw.Draw(tomatoimage)
-        disp.image(tomatoimage, rotation)
+        # disp.image(tomatoimage, rotation)
         draw.text((x_1+5, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
 
-        # disp.image(image, rotation)
+        disp.image(image, rotation)
 
 
 
