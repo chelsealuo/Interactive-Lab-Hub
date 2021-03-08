@@ -86,9 +86,6 @@ restt = 5
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-
-    disp.image(tomatoimage, rotation)
-
     #TODO: fill in here. You should be able to look in cli_clock.py and stats.py 
 
     clocktime = strftime("%H:%M:%S")
@@ -146,6 +143,8 @@ while True:
 
 
     else: 
+        disp.image(tomatoimage, rotation)
+
         draw.text((x_1+5, y_1), clocktime, font=fontForTimeExact, fill="#FFFFFF")
         y += font.getsize(clocktime)[1]
         draw.text((x_2+5, y_2), dayWeek, font=fontForTimeOfWeek, fill="#FFFFFF")
