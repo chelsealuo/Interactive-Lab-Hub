@@ -196,6 +196,9 @@ As always, make sure you document contributions and ideas from others explicitly
 You are permitted (but not required) to work in groups and share a turn in; you are expected to make equal contribution on any group work you do, and N people's group project should look like N times the work of a single person's lab. What each person did should be explicitly documented. Make sure the page for the group turn in is linked to your Interactive Lab Hub page. 
 >>>>>>> a4b1f2c77c83b93dde140d22c60e4d44410fe0f8
 
+[link to the video](https://drive.google.com/file/d/1Aa589hxdDQYGIPHTv01D-nSimTiOkfIv/view?usp=sharing) \
+
+Note: Time of the clock is changed for recording purposes.
 
 Comment:
-Jiadong Lou: The idea of making a pomodoro clock is very interesting and practical. From the sketch, I really like that the future design will include animation and sound to remind the user. However, it will be really great if you can make the countdown a little bit larger. Because it's a pomodoro clock, maybe the date isn't as important as the countdown.
+See comments in discussion
